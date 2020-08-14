@@ -22,6 +22,10 @@ namespace Adam_Helton_Unit2_IT481
         public Form1()
         {
             InitializeComponent();
+            textBox1.Text = "User_CEO";
+            textBox2.Text = "123456";
+            textBox3.Text = "DESKTOP-DOUST62";
+            textBox4.Text = "northwind";
             button1.Click += new EventHandler(button1_Click);
             button2.Click += new EventHandler(button2_Click);
             button3.Click += new EventHandler(button3_Click);
@@ -52,7 +56,7 @@ namespace Adam_Helton_Unit2_IT481
             }
             if (isValid)
             {
-                Controller = new DB("Server = " + server + "//SQLEXPRESS;" +
+                Controller = new DB("Server = " + server + "\\SQLEXPRESS;" +
                     "Database = " + database + ";" + 
                     "User Id = " + user + ";" +
                     "Password = " + password + ";");

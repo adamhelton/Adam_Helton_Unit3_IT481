@@ -18,6 +18,7 @@ namespace Adam_Helton_Unit2_IT481
                 "Database=northwind;" +
                 "User Instance=false;");
 
+
         }
 
         public DB(string conn)
@@ -47,7 +48,7 @@ namespace Adam_Helton_Unit2_IT481
 
         public string getCompanyNames()
         {
-            string names = "None";
+            string names = "";
             SqlDataReader dataReader;
 
             cnn = new SqlConnection(connectionString);

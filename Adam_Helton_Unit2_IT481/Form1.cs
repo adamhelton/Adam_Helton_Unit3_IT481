@@ -12,7 +12,13 @@ namespace Adam_Helton_Unit2_IT481
 {
     public partial class Form1 : Form
     {
-        DB database;
+        private DB Controller; 
+        private string user;
+        private string password;
+        private string server;
+        private string database;
+
+        
         public Form1()
         {
             InitializeComponent();
@@ -28,10 +34,11 @@ namespace Adam_Helton_Unit2_IT481
 
         private void button1_Click(object sender, EventArgs e)
         {
-            database = new DB("Server = DESKTOP-DOUST62\\SQLEXPRESS; " +
-                "Trusted_Connection=true;" +
-                "Database=northwind;" +
-                "User Instance=false;");
+            bool isValid = true;
+            user = textBox1.Text;
+            password = textBox2.Text;
+            server = textBox3.Text;
+            database = textBox4.Text;
                 
 
             MessageBox.Show("Connection information sent");

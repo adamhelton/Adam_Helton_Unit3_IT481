@@ -50,5 +50,9 @@ namespace Adam_Helton_Unit2_IT481
 
         }
 
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

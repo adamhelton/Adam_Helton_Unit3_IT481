@@ -130,7 +130,7 @@
             this.label6.Size = new System.Drawing.Size(38, 13);
             this.label6.TabIndex = 8;
             this.label6.Text = "Server";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            
             // 
             // label7
             // 

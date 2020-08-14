@@ -25,6 +25,10 @@ namespace Adam_Helton_Unit2_IT481
             button1.Click += new EventHandler(button1_Click);
             button2.Click += new EventHandler(button2_Click);
             button3.Click += new EventHandler(button3_Click);
+            button4.Click += new EventHandler(button4_Click);
+            button5.Click += new EventHandler(button5_Click);
+            button6.Click += new EventHandler(button6_Click);
+            button7.Click += new EventHandler(button7_Click);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -84,7 +88,7 @@ namespace Adam_Helton_Unit2_IT481
         }
         private void button6_Click(object sender, EventArgs e)
         {
-            string names = Controller.getOrdercount();
+            string names = Controller.getOrderCount();
             MessageBox.Show(names, "Order count");
 
         }

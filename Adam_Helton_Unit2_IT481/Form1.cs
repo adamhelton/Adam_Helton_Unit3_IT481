@@ -39,6 +39,22 @@ namespace Adam_Helton_Unit2_IT481
             password = textBox2.Text;
             server = textBox3.Text;
             database = textBox4.Text;
+
+            if(user.Length == 0 || password.Length == 0 ||
+                server.Length == 0 || database.Length == 0)
+            {
+                isValid = false;
+                MessageBox.Show("You must enter user name, password, server, and database values");
+            }
+            if (isValid)
+            {
+                Controller = new DB("Server = " + server + "//SQLEXPRESS;" +
+                    "Database = " + database + ";" + 
+                    "User Id = " + user + ";" +
+                    "Password = " + password + ";");
+
+                MessageBox.Show("Connection information sent");
+            }
                 
 
             MessageBox.Show("Connection information sent");

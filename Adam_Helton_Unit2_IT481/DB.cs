@@ -69,6 +69,24 @@ namespace Adam_Helton_Unit2_IT481
 
             return names;
         }
+        public string getEmployeeCount()
+        {
+            Int32 count = 0;
 
+            cnn = new SqlConnection(connectionString);
+            cnn.Open();
+            string countQuery = "select count(*) from employees;";
+            SqlCommand cmd = new SqlCommand(countQuery, cnn);
+
+            try
+            {
+                count = Convert.ToInt32(cmd.ExecuteScalar());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return count.ToString();
+        }
     }
 }

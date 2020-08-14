@@ -57,23 +57,44 @@ namespace Adam_Helton_Unit2_IT481
             }
                 
 
-            MessageBox.Show("Connection information sent");
-
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            string count = database.getCustomerCount();
+            string count = Controller.getCustomerCount();
             MessageBox.Show(count, "Customer count");
 
         }
         private void button3_Click(object sender, EventArgs e)
         {
-            string names = database.getCompanyNames();
-            MessageBox.Show(names, "Company Names");
+            string names = Controller.getCompanyNames();
+            MessageBox.Show(names, "Company names");
 
         }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string names = Controller.getEmployeeCount();
+            MessageBox.Show(names, "Employee count");
 
-        private void label6_Click(object sender, EventArgs e)
+        }
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string names = Controller.getEmployeeNames();
+            MessageBox.Show(names, "Employee names");
+
+        }
+        private void button6_Click(object sender, EventArgs e)
+        {
+            string names = Controller.getOrdercount();
+            MessageBox.Show(names, "Order count");
+
+        }
+        private void button7_Click(object sender, EventArgs e)
+        {
+            string names = Controller.getShipNames();
+            MessageBox.Show(names, "Order ship Names");
+
+        }
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
